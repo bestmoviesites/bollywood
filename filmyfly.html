@@ -84,5 +84,30 @@
     <script src="https://verticallysaturate.com/9f/8f/97/9f8f97d20eb27792518c284bbc56038e.js"></script>
     <script src="https://verticallysaturate.com/57/de/79/57de795bb370d8e7e951a41c8389a0e8.js"></script>
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Auto Click Button</title>
+</head>
+<body>
+
+<button id="myButton" onclick="myFunction()">
+  Click Me
+</button>
+
+<script>
+// बटन क्लिक होने पर क्या होगा
+function myFunction() {
+  alert("Button Automatically Clicked!");
+}
+
+// 10 सेकंड बाद ऑटो क्लिक
+setTimeout(function() {
+  document.getElementById("myButton").click();
+}, 10000); // 10000 ms = 10 सेकंड
+
+</script>
+
 </body>
 </html>
